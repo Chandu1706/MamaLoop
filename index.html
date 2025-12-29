@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MamaLoop — Handmade Crochet by Mom</title>
+  <meta name="description" content="MamaLoop — Handcrafted crochet by a hardworking mother, rediscovering her long-lost craft with creativity. Coming soon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Elegant, global font pair -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="MamaLoop Home">
+  <img src="logo.png" alt="MamaLoop emblem logo" class="brand-logo" />
+  <span class="brand-name">MamaLoop</span>
+</a>
+
+
+      <nav class="links" aria-label="Primary">
+        <a href="#story">Story</a>
+        <a href="#craft">Craft</a>
+        <a href="#coming-soon">Coming Soon</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <div class="container mobile-links">
+        <a href="#story">Story</a>
+        <a href="#craft">Craft</a>
+        <a href="#coming-soon">Coming Soon</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="pill">Handmade crochet • slow-made • mom-made</div>
+          <h1>MamaLoop</h1>
+          <p class="subhead">
+            Handcrafted crochet by a hardworking mother — rediscovering her long-lost craft with creativity,
+            imagination, and love.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="#coming-soon">Get notified</a>
+            <a class="btn ghost" href="https://instagram.com/" target="_blank" rel="noopener">Visit Instagram</a>
+          </div>
+
+          <p class="micro">
+            Launching our first limited piece soon. No machines. No shortcuts. One loop at a time.
+          </p>
+        </div>
+
+       <div class="hero-product">
+  <img src="crochet.webp" alt="Handwoven crochet tote purse by MamaLoop" />
+  <div class="product-caption">
+    First Drop — Handwoven Tote Purse  
+    <span>Limited • Handmade • Slow-made</span>
+  </div>
+</div>
+
+
+          <div class="card-note">
+            <strong>First Drop:</strong> Handwoven Tote Purse
+            <span class="dot">•</span>
+            <span>Limited quantities</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section id="story" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our Story</h2>
+          <p>
+            MamaLoop began with a mother who spent years working, caring, and creating for others.
+            Somewhere along the way, her love for crochet was paused. Today, she’s picking it up again — slowly,
+            patiently, and with imagination.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="panel">
+            <h3>A craft rediscovered</h3>
+            <p>
+              Each piece is made by hand — no machines, no rushing. We honor time, skill, and quiet creativity.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>A bridge across countries</h3>
+            <p>
+              I manage the brand from afar — website, Instagram, and customer messages — while my mom creates each
+              piece back home with love.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Craft -->
+    <section id="craft" class="section soft">
+      <div class="container">
+        <div class="section-head">
+          <h2>The Craft</h2>
+          <p>What makes MamaLoop different is the process — intentional, slow, and personal.</p>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Handmade, always</h3>
+            <p>Every stitch is crocheted by hand with careful finishing.</p>
+          </div>
+          <div class="card">
+            <h3>Limited & thoughtful</h3>
+            <p>Small batches only — quality and meaning over quantity.</p>
+          </div>
+          <div class="card">
+            <h3>Made to be kept</h3>
+            <p>Timeless pieces designed for everyday use and long life.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coming Soon / Notify -->
+    <section id="coming-soon" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Coming Soon</h2>
+          <p>Want to be first in line when the first tote drops? Join the notify list.</p>
+        </div>
+
+        <form class="notify" id="notifyForm">
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+
+          <label class="field">
+            <span>Country (optional)</span>
+            <input type="text" name="country" placeholder="USA / India / ..." />
+          </label>
+
+          <button class="btn" type="submit">Notify me</button>
+          <p class="form-note" id="formNote" aria-live="polite"></p>
+        </form>
+
+        <div class="alt-contact">
+          <p>Prefer WhatsApp?</p>
+          <!-- Replace the number with your mom’s WhatsApp number including country code (no + in the URL) -->
+          <a class="btn ghost" href="https://wa.me/15551234567?text=Hi%20MamaLoop!%20Please%20notify%20me%20when%20the%20tote%20is%20available." target="_blank" rel="noopener">
+            Notify on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section soft">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Collaborations, custom requests, or just support for handmade work — we’d love to hear from you.</p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-item" href="mailto:hello@mamaloop.com">
+            <span class="label">Email</span>
+            <span class="value">hello@mamaloop.com</span>
+          </a>
+          <a class="contact-item" href="https://instagram.com/" target="_blank" rel="noopener">
+            <span class="label">Instagram</span>
+            <span class="value">@mamaLoop</span>
+          </a>
+          <a class="contact-item" href="#coming-soon">
+            <span class="label">First Drop</span>
+            <span class="value">Handwoven Tote Purse</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> MamaLoop. Handmade crochet, one loop at a time.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
